@@ -464,13 +464,19 @@ footer {
     transform: translateY(-2px);
 }
 
-/* About Section */
+/* Founder Image Section */
+.image-section {
+    padding: 64px 0 0 0;
+    /* Only top padding to act as a smooth transition between sections */
+}
+
 .about-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
+    /* Scaled down slightly for neatness */
     height: auto;
-    border-radius: 4px;
-    /* subtle rounding */
+    border-radius: 8px;
+    /* Tighter radius to match the modern video container */
     /* Minimalist B&W styling */
     filter: grayscale(100%) contrast(1.1);
     display: block;
