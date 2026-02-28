@@ -432,6 +432,10 @@ section:last-of-type {
     border-color: var(--text-color);
 }
 
+.form-group textarea {
+    resize: none;
+}
+
 /* Footer */
 footer {
     padding: 40px 0;
