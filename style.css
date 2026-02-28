@@ -119,11 +119,11 @@ em {
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 900px;
-    /* Widened for landscape layout */
+    max-width: 450px;
+    /* Narrowed for typical vertical phone layout */
     margin: 0 auto;
-    aspect-ratio: 16 / 9;
-    /* Landscape aspect ratio */
+    aspect-ratio: 9 / 16;
+    /* Vertical aspect ratio */
     background: #000;
     border-radius: 16px;
     overflow: hidden;
