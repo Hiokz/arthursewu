@@ -404,7 +404,6 @@ section:last-of-type {
 }
 
 .form-group input,
-.form-group select,
 .form-group textarea {
     width: 100%;
     padding: 16px;
@@ -418,18 +417,104 @@ section:last-of-type {
     appearance: none;
 }
 
-.form-group select {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-size: 16px;
-}
-
 .form-group input:focus,
-.form-group select:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--text-color);
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* Custom Animated Dropdown */
+.custom-dropdown-group {
+    position: relative;
+}
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-trigger {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-trigger:focus,
+.custom-dropdown.open .dropdown-trigger {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.custom-dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-top: -2px;
+    /* Pull up to hide under trigger */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+
+    /* Animation classes */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+    list-style: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.custom-dropdown.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-option {
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--gray-dark);
+}
+
+.dropdown-option:hover {
+    background: var(--gray-light);
+    color: var(--text-color);
+}
+
+.dropdown-option.selected {
+    font-weight: 600;
+    color: var(--text-color);
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .form-group textarea {
