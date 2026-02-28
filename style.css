@@ -157,25 +157,14 @@ section:last-of-type {
     border-bottom: 1px solid var(--border-color);
 }
 
-.video-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    max-width: 1000px;
-    margin: 0 auto 48px auto;
-}
-
-.video-grid .primary-video {
-    grid-column: 1 / -1;
-}
-
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 ratio */
     height: 0;
     overflow: hidden;
-    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 48px auto;
     background: #000;
     border-radius: 8px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -579,12 +568,8 @@ footer {
     margin: 0 auto;
 }
 
-/* Mobile Nav Overlay && Mobile Grid Adjustments */
+/* Mobile Nav Overlay */
 @media (max-width: 768px) {
-    .video-grid {
-        grid-template-columns: 1fr;
-    }
-
     .nav-links {
         display: flex;
         flex-direction: column;
