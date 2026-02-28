@@ -63,6 +63,12 @@ em {
     max-width: 600px;
 }
 
+.container-wide {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 /* =========================================
    SECTION 1: Logo Header
    ========================================= */
@@ -197,83 +203,35 @@ em {
     line-height: 1.1;
 }
 
-.results-grid {
+/* Screenshot Proof Grid (like joinbrezscales.com) */
+.proof-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 20px;
 }
 
 @media (max-width: 768px) {
-    .results-grid {
+    .proof-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.result-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
+.proof-img-card {
     border-radius: 12px;
-    padding: 36px;
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.result-card:hover {
+.proof-img-card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
-.result-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 28px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border);
-}
-
-.result-card-header h3 {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.result-badge {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 4px 10px;
-    border: 1px solid var(--text-muted);
-    border-radius: 100px;
-    color: var(--text-muted);
-}
-
-.result-metrics {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 28px;
-}
-
-.result-metric {
-    display: flex;
-    flex-direction: column;
-}
-
-.result-label {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-dim);
-    margin-bottom: 4px;
-}
-
-.result-value {
-    font-size: 32px;
-    font-weight: 900;
-}
-
-.result-desc {
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--text-muted);
+.proof-img-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* =========================================
