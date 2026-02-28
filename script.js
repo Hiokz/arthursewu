@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             iframe.style.left = '0';
             iframe.style.width = '100%';
             iframe.style.height = '100%';
-            iframe.style.borderRadius = '12px';
+            iframe.style.borderRadius = '16px';
             wrapper.appendChild(iframe);
             videoThumbnail.style.display = 'none';
         });
