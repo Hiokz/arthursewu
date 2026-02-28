@@ -107,6 +107,8 @@ h3 {
 .nav-btn.btn {
     padding: 10px 24px;
     font-size: 14px;
+    color: var(--bg-color);
+    /* Fix: Force text color to white */
 }
 
 /* Hamburger (Mobile Menu Toggle) */
