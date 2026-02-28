@@ -240,8 +240,88 @@ em {
 }
 
 /* =========================================
-   SECTION 4: Social Proof / Results
+   Shared Section Components
    ========================================= */
+.section-tag {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ef4444;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.section-heading {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.section-sub {
+    font-size: clamp(15px, 1.8vw, 18px);
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto 48px auto;
+}
+
+/* =========================================
+   SECTION 4: Services
+   ========================================= */
+.services-section {
+    padding: 80px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.service-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #ef4444;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.service-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* =========================================
+   SECTION 5: Growth / Results
+   ========================================= */
+.growth-section {
+    padding: 80px 0;
+}
+
 .social-proof {
     padding: 80px 0;
 }
