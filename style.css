@@ -115,21 +115,18 @@ em {
     letter-spacing: 0.02em;
 }
 
-/* Video — vertical 9:16 style like joinbrezscales.com */
+/* Video — landscape 16:9 style */
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 450px;
-    /* Narrowed for typical vertical phone layout */
+    max-width: 900px;
     margin: 0 auto;
-    aspect-ratio: 9 / 16;
-    /* Vertical aspect ratio */
+    aspect-ratio: 16 / 9;
     background: #000;
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-    /* Premium dark shadow */
 }
 
 .local-video {
