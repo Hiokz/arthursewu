@@ -7,178 +7,177 @@
     <title>Arthur Sewu | Full Stack Marketer</title>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <!-- Use Google Fonts (Inter is great for minimalism) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation (hidden for funnel mode) -->
-    <!--
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">SEWU.</a>
-            <ul class="nav-links">
-                <li><a href="#case-studies">Results</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact" class="btn primary-btn nav-btn">Apply Now</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-    -->
+    <!-- ========================================
+         SECTION 1: Centered Logo
+         ======================================== -->
+    <div class="logo-header">
+        <span class="logo">SEWU.</span>
+    </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1 class="headline">How I scale an e-com brand from $0 &rarr; $100k/month.</h1>
-            <p class="sub-headline">Discover the exact framework I use to build, launch, and ruthlessly scale profitable
-                stores.</p>
-
+    <!-- ========================================
+         SECTION 2: Hero — Headline + Sub + Video
+         ======================================== -->
+    <section class="hero">
+        <div class="container-narrow">
+            <h1 class="hero-headline">How I Scale An E-com Brand From $0 &rarr; $100k/month.</h1>
+            <p class="hero-sub"><em>Discover the exact framework I use to build, launch, and ruthlessly scale profitable
+                    stores.</em></p>
             <p class="watch-prompt"><strong>Watch The Video Below To Learn How To Get Started:</strong></p>
 
-            <div class="video-container" id="video-container">
-                <!-- Primary Hero Video -->
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yGFCkl2uDOw?si=SZlEhVw2qeKKnKJ8"
-                    title="YouTube video player" frameborder="0"
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/yGFCkl2uDOw?si=SZlEhVw2qeKKnKJ8" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-
-            <a href="#contact" class="btn cta-btn cta-btn-large">APPLY NOW</a>
         </div>
-    </header>
+    </section>
 
-    <!-- Case Studies Section -->
-    <section class="case-studies" id="case-studies">
-        <div class="container">
-            <h2 class="section-title">Case Studies</h2>
-            <div class="grid">
+    <!-- ========================================
+         SECTION 3: Urgency CTA
+         ======================================== -->
+    <section class="cta-section">
+        <div class="container-narrow">
+            <h2 class="cta-heading">Apply Now Before I Stop Taking New Clients:</h2>
+            <a href="#contact" class="btn-cta">APPLY NOW</a>
+            <p class="cta-subtext"><em>Fill out the quick application below to see if you qualify.</em></p>
+        </div>
+    </section>
 
-                <div class="card">
-                    <div class="card-header">
+    <!-- ========================================
+         SECTION 4: Social Proof / Results
+         ======================================== -->
+    <section class="social-proof">
+        <div class="container-narrow">
+            <h2 class="proof-heading">Here's what happens when founders work with me:</h2>
+
+            <div class="results-grid">
+
+                <div class="result-card">
+                    <div class="result-card-header">
                         <h3>Brand Alpha</h3>
-                        <span class="badge">90 Days</span>
+                        <span class="result-badge">90 Days</span>
                     </div>
-                    <div class="metrics">
-                        <div class="metric">
-                            <span class="label">Start</span>
-                            <span class="value">$0</span>
+                    <div class="result-metrics">
+                        <div class="result-metric">
+                            <span class="result-label">Start</span>
+                            <span class="result-value">$0</span>
                         </div>
-                        <div class="metric">
-                            <span class="label">Current</span>
-                            <span class="value">$125k/mo</span>
+                        <div class="result-metric">
+                            <span class="result-label">Current</span>
+                            <span class="result-value">$125k/mo</span>
                         </div>
                     </div>
-                    <p>Completely revamped their creative strategy, implemented aggressive CBO testing, and scaled
-                        vertically within 3 months.</p>
+                    <p class="result-desc">Completely revamped their creative strategy, implemented aggressive CBO
+                        testing, and scaled vertically within 3 months.</p>
                 </div>
 
-                <div class="card card-dark">
-                    <div class="card-header">
+                <div class="result-card">
+                    <div class="result-card-header">
                         <h3>Store Beta</h3>
-                        <span class="badge">6 Months</span>
+                        <span class="result-badge">6 Months</span>
                     </div>
-                    <div class="metrics">
-                        <div class="metric">
-                            <span class="label">Start</span>
-                            <span class="value">$15k/mo</span>
+                    <div class="result-metrics">
+                        <div class="result-metric">
+                            <span class="result-label">Start</span>
+                            <span class="result-value">$15k/mo</span>
                         </div>
-                        <div class="metric">
-                            <span class="label">Current</span>
-                            <span class="value">$210k/mo</span>
+                        <div class="result-metric">
+                            <span class="result-label">Current</span>
+                            <span class="result-value">$210k/mo</span>
                         </div>
                     </div>
-                    <p>Fixed their broken backend funnel. Increased AOV by 40% and LTV by 65%, allowing us to outspend
-                        competitors on frontend acquisition.</p>
+                    <p class="result-desc">Fixed their broken backend funnel. Increased AOV by 40% and LTV by 65%,
+                        allowing us to outspend competitors on frontend acquisition.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Founder Image -->
-    <div class="image-section">
-        <div class="container text-center">
-            <img src="assets/arthur.jpeg" alt="Arthur Sewu - Full Stack Marketer" class="about-img">
-        </div>
-    </div>
+    <!-- ========================================
+         SECTION 5: Testimonials
+         ======================================== -->
+    <section class="testimonials-section">
+        <div class="container-narrow">
+            <h2 class="proof-heading">What founders have to say:</h2>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Founders Say</h2>
-            <div class="grid grid-3">
-
-                <div class="testimonial">
-                    <p class="quote">"Arthur completely changed how we look at paid acquisition. We hit our first
-                        $100k
-                        month exactly 45 days after he took over the ad accounts."</p>
-                    <div class="author">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Arthur completely changed how we look at paid acquisition. We hit our
+                        first $100k month exactly 45 days after he took over the ad accounts."</p>
+                    <div class="testimonial-author">
                         <strong>Jameson T.</strong>
                         <span>Founder, TechGear</span>
                     </div>
                 </div>
 
-                <div class="testimonial">
-                    <p class="quote">"The infrastructure he builds is insane. We went from struggling to break even
-                        to a
-                        consistent 3.5x ROAS at scale."</p>
-                    <div class="author">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"The infrastructure he builds is insane. We went from struggling to
+                        break even to a consistent 3.5x ROAS at scale."</p>
+                    <div class="testimonial-author">
                         <strong>Sarah L.</strong>
                         <span>CEO, Lumiere</span>
                     </div>
                 </div>
 
-                <div class="testimonial">
-                    <p class="quote">"Zero fluff. Just relentless execution and numbers that speak for themselves.
-                        Best
-                        ROI we've ever had from a consultant."</p>
-                    <div class="author">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Zero fluff. Just relentless execution and numbers that speak for
+                        themselves. Best ROI we've ever had from a consultant."</p>
+                    <div class="testimonial-author">
                         <strong>Marcus D.</strong>
                         <span>Co-Founder, FitLife</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact" id="contact">
-        <div class="container container-small">
-            <h2 class="section-title">Ready to scale?</h2>
-            <p class="text-center">I only take on 2 new brands per quarter. Fill out the application below.</p>
+    <!-- ========================================
+         SECTION 6: Founder Image
+         ======================================== -->
+    <section class="founder-section">
+        <div class="container-narrow text-center">
+            <img src="assets/arthur.jpeg" alt="Arthur Sewu - Full Stack Marketer" class="founder-img">
+        </div>
+    </section>
 
-            <form action="https://formsubmit.co/arthur@sewu.org" method="POST" class="contact-form">
-                <!-- Replace 'your-email-here' with actual FormSubmit email or token -->
+    <!-- ========================================
+         SECTION 7: Application Form
+         ======================================== -->
+    <section class="application-section" id="contact">
+        <div class="container-narrow container-form">
+            <h2 class="form-heading">Ready to scale?</h2>
+            <p class="form-sub"><em>I only take on 2 new brands per quarter. Fill out the application below.</em></p>
+
+            <form action="https://formsubmit.co/arthur@sewu.org" method="POST" class="application-form">
                 <input type="hidden" name="_subject" value="New E-com Scaling Application">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://sewu.org/">
 
-                <div class="form-group">
+                <div class="form-field">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" required placeholder="John Doe">
                 </div>
 
-                <div class="form-group">
+                <div class="form-field">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required placeholder="john@company.com">
                 </div>
 
-                <div class="form-group custom-dropdown-group">
+                <div class="form-field">
                     <label>Current Monthly Revenue</label>
                     <div class="custom-dropdown" id="revenue-dropdown">
-                        <!-- Hidden input to actually store the selected value for FormSubmit -->
                         <input type="hidden" name="revenue" id="revenue-input" required>
-
                         <button type="button" class="dropdown-trigger">
                             <span class="dropdown-selected">Select a range</span>
                             <svg class="dropdown-arrow" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
@@ -186,7 +185,6 @@
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
-
                         <ul class="dropdown-menu">
                             <li class="dropdown-option" data-value="$0 - $10k">$0 - $10k</li>
                             <li class="dropdown-option" data-value="$10k - $50k">$10k - $50k</li>
@@ -196,21 +194,24 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-field">
                     <label for="message">What's your biggest bottleneck right now?</label>
                     <textarea id="message" name="message" rows="4" required placeholder="Be specific..."></textarea>
                 </div>
 
-                <button type="submit" class="btn cta-btn block-btn">Submit Application</button>
+                <button type="submit" class="btn-cta btn-block">SUBMIT APPLICATION</button>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container text-center">
-            <div class="social-links">
+    <!-- ========================================
+         SECTION 8: Footer (Socials + Disclaimer)
+         ======================================== -->
+    <footer class="site-footer">
+        <div class="container-narrow text-center">
+            <div class="footer-socials">
                 <a href="https://www.instagram.com/arthursewu/" target="_blank" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -218,7 +219,7 @@
                     </svg>
                 </a>
                 <a href="https://youtube.com/@arthursewu" target="_blank" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path
                             d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
@@ -227,15 +228,19 @@
                     </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/arthursewu/" target="_blank" aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        </path>
                         <rect x="2" y="9" width="4" height="12"></rect>
                         <circle cx="4" cy="4" r="2"></circle>
                     </svg>
                 </a>
             </div>
-            <p>&copy; 2026 Arthur Sewu. All rights reserved.</p>
+            <p class="disclaimer">INCOME DISCLAIMER: The results shown on this page are not typical. Your results will
+                vary based on your background, experience, commitment, and market conditions. We do not guarantee any
+                specific income or outcomes from working with Arthur Sewu.</p>
+            <p class="copyright">&copy; 2026 Arthur Sewu. All rights reserved.</p>
         </div>
     </footer>
 
