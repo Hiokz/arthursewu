@@ -444,6 +444,59 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+/* About Section */
+.about-grid {
+    align-items: center;
+}
+
+.text-left {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 4px;
+    /* subtle rounding */
+    /* Minimalist B&W styling */
+    filter: grayscale(100%) contrast(1.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.about-metric {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-color);
+    display: inline-block;
+}
+
+.about-metric .value {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.about-metric .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gray-dark);
+    font-weight: 600;
+}
+
 /* Mobile Nav Overlay */
 @media (max-width: 768px) {
     .nav-links {
