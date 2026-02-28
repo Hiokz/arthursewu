@@ -444,6 +444,26 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.social-links a {
+    color: var(--gray-dark);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: var(--text-color);
+    transform: translateY(-2px);
+}
+
 /* About Section */
 .about-grid {
     align-items: center;
