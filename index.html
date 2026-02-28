@@ -14,6 +14,24 @@
 
 <body>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">SEWU.</a>
+            <ul class="nav-links">
+                <li><a href="#case-studies">Results</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn primary-btn nav-btn">Apply Now</a></li>
+            </ul>
+            <!-- Hamburger for Mobile -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
@@ -128,6 +146,7 @@
                 <!-- Replace 'your-email-here' with actual FormSubmit email or token -->
                 <input type="hidden" name="_subject" value="New E-com Scaling Application">
                 <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://sewu.org/">
 
                 <div class="form-group">
                     <label for="name">Full Name</label>
@@ -166,6 +185,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

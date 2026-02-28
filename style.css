@@ -59,6 +59,75 @@ h3 {
     text-align: center;
 }
 
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 24px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: -0.05em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--gray-dark);
+}
+
+.nav-btn.btn {
+    padding: 10px 24px;
+    font-size: 14px;
+}
+
+/* Hamburger (Mobile Menu Toggle) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 1001;
+    /* Above mobile menu overlay */
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: var(--transition);
+}
+
 /* Layout */
 .container {
     max-width: 1200px;
@@ -81,7 +150,7 @@ section:last-of-type {
 
 /* Hero */
 .hero {
-    padding: 120px 0 100px;
+    padding: 160px 0 100px;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
@@ -307,4 +376,65 @@ footer {
     font-size: 14px;
     color: var(--gray-dark);
     border-top: 1px solid var(--border-color);
+}
+
+/* Mobile Nav Overlay */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        /* Takes it out of document flow to cover screen */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--bg-color);
+        padding: 32px;
+        box-shadow: none;
+
+        /* Hidden state for animation */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        gap: 40px;
+    }
+
+    .nav-links li a {
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+    }
+
+    .nav-links .nav-btn.btn {
+        font-size: 18px;
+        padding: 16px 40px;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show hamburger on mobile */
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
 }
