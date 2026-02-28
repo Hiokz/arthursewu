@@ -36,17 +36,28 @@ h3 {
 }
 
 .headline {
-    font-size: clamp(40px, 6vw, 72px);
+    font-size: clamp(36px, 7vw, 80px);
     margin-bottom: 24px;
+    font-weight: 900;
+    line-height: 1.05;
 }
 
 .sub-headline {
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(18px, 2.5vw, 24px);
     color: var(--gray-dark);
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     font-weight: 400;
-    max-width: 800px;
+    font-style: italic;
+    max-width: 700px;
     margin-inline: auto;
+}
+
+/* Watch Prompt (like joinbrezscales) */
+.watch-prompt {
+    font-size: clamp(14px, 1.5vw, 18px);
+    margin-bottom: 32px;
+    color: var(--text-color);
+    letter-spacing: 0.02em;
 }
 
 .section-title {
@@ -144,7 +155,6 @@ h3 {
 
 section {
     padding: 100px 0;
-    border-bottom: 1px solid var(--border-color);
 }
 
 section:last-of-type {
@@ -153,9 +163,8 @@ section:last-of-type {
 
 /* Hero */
 .hero {
-    padding: 160px 0 100px;
+    padding: 80px 0 100px;
     text-align: center;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .video-container {
@@ -262,6 +271,33 @@ section:last-of-type {
 .primary-btn:hover {
     background-color: transparent;
     color: #ffffff;
+}
+
+/* High-Contrast CTA Button (Funnel Style) */
+.cta-btn {
+    background-color: #ea580c;
+    color: #ffffff;
+    border: none;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 20px 48px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(234, 88, 12, 0.3);
+}
+
+.cta-btn:hover {
+    background-color: #c2410c;
+    box-shadow: 0 6px 30px rgba(234, 88, 12, 0.5);
+    transform: translateY(-2px);
+}
+
+.cta-btn-large {
+    font-size: 22px;
+    padding: 24px 64px;
 }
 
 .block-btn {
@@ -530,7 +566,6 @@ footer {
     padding: 40px 0;
     font-size: 14px;
     color: var(--gray-dark);
-    border-top: 1px solid var(--border-color);
 }
 
 .social-links {
