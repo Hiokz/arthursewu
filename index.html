@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Sewu | E-Com Growth Consultant</title>
+    <!-- Use Google Fonts (Inter is great for minimalism) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="headline">How I scale an e-com brand from $0 &rarr; $100k/month.</h1>
+            <p class="sub-headline">Discover the exact framework I use to build, launch, and ruthlessly scale profitable
+                stores.</p>
+
+            <div class="video-container">
+                <!-- Placeholder for the actual YouTube Video -->
+                <iframe width="100%" height="100%" src="https://www.youtube.com/" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <a href="#contact" class="btn primary-btn">Apply to work with me</a>
+        </div>
+    </header>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Brand Alpha</h3>
+                        <span class="badge">90 Days</span>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="label">Start</span>
+                            <span class="value">$0</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Current</span>
+                            <span class="value">$125k/mo</span>
+                        </div>
+                    </div>
+                    <p>Completely revamped their creative strategy, implemented aggressive CBO testing, and scaled
+                        vertically within 3 months.</p>
+                </div>
+
+                <div class="card card-dark">
+                    <div class="card-header">
+                        <h3>Store Beta</h3>
+                        <span class="badge">6 Months</span>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="label">Start</span>
+                            <span class="value">$15k/mo</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Current</span>
+                            <span class="value">$210k/mo</span>
+                        </div>
+                    </div>
+                    <p>Fixed their broken backend funnel. Increased AOV by 40% and LTV by 65%, allowing us to outspend
+                        competitors on frontend acquisition.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Founders Say</h2>
+            <div class="grid grid-3">
+
+                <div class="testimonial">
+                    <p class="quote">"Arthur completely changed how we look at paid acquisition. We hit our first $100k
+                        month exactly 45 days after he took over the ad accounts."</p>
+                    <div class="author">
+                        <strong>Jameson T.</strong>
+                        <span>Founder, TechGear</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="quote">"The infrastructure he builds is insane. We went from struggling to break even to a
+                        consistent 3.5x ROAS at scale."</p>
+                    <div class="author">
+                        <strong>Sarah L.</strong>
+                        <span>CEO, Lumiere</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="quote">"Zero fluff. Just relentless execution and numbers that speak for themselves. Best
+                        ROI we've ever had from a consultant."</p>
+                    <div class="author">
+                        <strong>Marcus D.</strong>
+                        <span>Co-Founder, FitLife</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+        <div class="container container-small">
+            <h2 class="section-title">Ready to scale?</h2>
+            <p class="text-center">I only take on 2 new brands per quarter. Fill out the application below.</p>
+
+            <form action="https://formsubmit.co/arthur@sewu.org" method="POST" class="contact-form">
+                <!-- Replace 'your-email-here' with actual FormSubmit email or token -->
+                <input type="hidden" name="_subject" value="New E-com Scaling Application">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="revenue">Current Monthly Revenue</label>
+                    <select id="revenue" name="revenue" required>
+                        <option value="" disabled selected>Select a range</option>
+                        <option value="$0 - $10k">$0 - $10k</option>
+                        <option value="$10k - $50k">$10k - $50k</option>
+                        <option value="$50k - $100k">$50k - $100k</option>
+                        <option value="$100k+">$100k+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">What's your biggest bottleneck right now?</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Be specific..."></textarea>
+                </div>
+
+                <button type="submit" class="btn primary-btn block-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Arthur Sewu. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
