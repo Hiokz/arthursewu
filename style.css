@@ -11,8 +11,8 @@
     --text-dim: #666666;
     --surface: #111111;
     --border: #222222;
-    --accent: #ea580c;
-    --accent-hover: #c2410c;
+    --accent: #ef4444;
+    --accent-hover: #dc2626;
     --transition: all 0.3s ease;
 }
 
@@ -171,12 +171,12 @@ em {
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition);
-    box-shadow: 0 4px 25px rgba(234, 88, 12, 0.35);
+    box-shadow: 0 4px 25px rgba(239, 68, 68, 0.35);
 }
 
 .btn-cta:hover {
     background-color: var(--accent-hover);
-    box-shadow: 0 8px 40px rgba(234, 88, 12, 0.55);
+    box-shadow: 0 8px 40px rgba(239, 68, 68, 0.55);
     transform: translateY(-3px);
 }
 
